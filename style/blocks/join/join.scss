@@ -1,0 +1,91 @@
+.join {
+	display: grid;
+	grid-gap: 12px;
+	&__txt {
+		margin-top: 38px;
+		margin-bottom: 26px;
+	}
+	&__txt-p {
+  font-family: HelveticaNeue-Medium;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #414141;
+  &:not(:first-child) {
+  	margin-top: 20px;
+  }
+	}
+	&__first-name, &__last-name, &__email, &__message {
+	padding: 11px 13px;
+
+	border: 1px solid #eeeeee;
+	border-radius: 3px;
+	background-color: #fafafa;
+
+  font-family: Bebas Neue;
+  font-size: 12pt;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  &::placeholder {
+  color: #c6c6c6;
+  }
+	}
+	&__first-name, &__last-name, &__email {
+	max-width: 216px;
+	}
+	&__message {
+	max-width: 492px;
+	height: 203px;
+
+	resize: none;
+	}
+	&__next {
+		margin-top: 3px;
+		margin-bottom: 245px;
+	}
+}
+
+/*MEDIA QUERIES*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.join {
+		&__next {
+		margin-bottom: 50px;
+	}
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.join {
+		&__next {
+		margin-bottom: 50px;
+	}
+}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+.join {
+		&__next {
+		margin-bottom: 30px;
+	}
+}
+}

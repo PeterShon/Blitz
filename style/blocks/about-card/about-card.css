@@ -1,0 +1,36 @@
+.about-card {
+  display: grid;
+}
+.about-card__heading {
+  font-family: Bebas Neue;
+  font-size: 18pt;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #474747;
+}
+.about-card__comment {
+  font-family: HelveticaNeue-Medium;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9e9d9d;
+}
+.about-card__txt {
+  font-family: HelveticaNeue-Medium;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #474747;
+}

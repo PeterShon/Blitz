@@ -1,0 +1,22 @@
+.gradient-line {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+
+	background: repeating-linear-gradient(-45deg, #cdcdcd 1px, #cdcdcd 2px, transparent 3px, transparent 5px);
+	&__h2 {
+	padding: 14px 30px;
+	background-color: #fff;
+
+	font-family: Bebas Neue;
+  font-size: 18pt;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #474747;
+	}
+}

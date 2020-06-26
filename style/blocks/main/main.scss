@@ -1,0 +1,426 @@
+.main {
+	margin: 0 auto;
+	width: 940px;
+	&__heading-wrap {
+		display: grid;
+		width: 550px;
+		margin-bottom: 13px;
+	}
+	&__heading {
+	  font-family: Bebas Neue;
+	  font-size: 24pt;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #474747;
+	}
+	&__comment-of-heading {
+	  font-family: HelveticaNeue-Medium;
+	  font-size: 12px;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: italic;
+	  line-height: 1.5;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #9e9e9e;
+	}
+	&__about-cards {
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 21px;
+	}
+	&__employee-cards {
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 21px;
+	}
+	&__image-box {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-flow: column;
+		align-items: end;
+		width: 100%;
+	}
+	&__image {
+		grid-column: 1 / 3;
+		width: 100%;
+	}
+	&__description-of-image-box {
+		position: absolute;
+		grid-column: 1 / 2;
+		display: grid;
+		justify-items: left;
+
+		padding: 14px 0 14px 17px;
+	  width: 217px;
+	  height: 72px;
+
+	  opacity: 0.9;
+	  background-color: #444444;
+	  &:hover {
+	  	background-color: #555555;
+	  }
+	}
+	&__descriptions-txt {
+	  font-family: Bebas Neue;
+	  font-size: 18px;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 0.72;
+	  letter-spacing: normal;
+	  text-align: center;
+	  color: #9a9a9a;
+	}
+	&__descriptions-h2 {
+		text-transform: uppercase;
+		margin: 0;
+
+		font-family: Bebas Neue;
+	  font-size: 28pt;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.1;
+	  letter-spacing: normal;
+	  text-align: center;
+	  color: #ffffff;
+	}
+	&__slider-buttons {
+		position: absolute;
+		grid-column: 2 / 3;
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 7px;
+		right: 0;
+		padding: 0 15px 14px 0;
+	}
+	&__slider-button {
+		position: relative;
+		z-index: 0;
+		width: 23px;
+		height: 5px;
+
+		transition-duration: 0.2s;
+
+		background-color: #fafafa;
+		cursor: pointer;
+		&--active {
+			opacity: 0.5;
+		}
+		&:hover {
+			box-shadow: 0 0 0px 2px #fafafa;
+		}
+	}
+	&__slider-buttons-2 {
+		display: grid;
+		grid-auto-flow: column;
+		justify-content: left;
+		grid-gap: 7px;
+		padding-bottom: 75px;
+	}
+	&__slider-button-2 {
+		position: relative;
+		z-index: 0;
+		width: 23px;
+		height: 5px;
+
+		transition-duration: 0.2s;
+
+		background-color: #9a9a9a;
+		cursor: pointer;
+		&--active {
+			opacity: 0.5;
+		}
+		&:hover {
+			box-shadow: 0 0 0px 2px #9a9a9a;
+		}
+	}
+	&__details-of-image-box {
+		display: grid;
+		position: relative;
+		box-sizing: border-box;
+		padding: 20px 17px;
+		height: 95px;
+		
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+		-webkit-transition-duration: .5s;
+		-o-transition-duration: .5s;
+		transition-duration: .5s;
+
+		background-color: #fafafa;
+		&:hover {
+			border-left: 1px solid #474747;
+			border-right: 1px solid #474747;
+			border-bottom: 1px solid #474747;
+		}
+	}
+	&__arrow {
+		position: absolute;
+		justify-self: center;
+		top: -9px;
+		width: 18px;
+		height: 18px;
+
+		background-color: #fafafa;
+		transform: rotate(45deg);
+	}
+	&__details-h2 {
+		margin: 0;
+
+	  font-family: Bebas Neue;
+	  font-size: 16pt;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 0.6;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #474747;
+	}
+	&__details-txt {
+		margin-top: 13px;
+		font-family: HelveticaNeue-Medium;
+	  font-size: 12px;
+	  font-weight: 500;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.17;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #474747;
+	}
+	&__about {
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 45px;
+		padding: 71px 0 68px 0;
+	}
+	&__gradient-line {
+		height: 29px;
+		&--narrow {
+			height: 5px;
+		}
+	}
+	&__latest-work-line {
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 20px;
+		padding: 44px 0 68px 0;
+	}
+	&__wrap {
+		display: grid;
+		grid-template-columns: 1fr 218px;
+		grid-gap: 61px;
+	}
+	&__filter {
+		height: 14px;
+		margin: 22px 0 27.3px;
+	}
+	&__projects {
+		column-count: 3;
+		column-gap: 18.8px;
+	}
+	&__right-side {
+		padding-top: 19px;
+	}
+}
+
+/*MEDIA QUERIES*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.main {
+	width: 768px;
+	&__about {
+		grid-auto-flow: row;
+		padding: 41px 0 38px 0;
+	}
+	&__latest-work-line {
+		padding: 44px 17px 68px 17px;
+	}
+	&__heading-wrap {
+		width: 100%;
+		padding: 0 17px 0 17px;	
+	}
+	&__about-cards {
+		padding: 0 17px 0 17px;		
+	}
+	&__employee-cards {
+		padding: 0 17px 0 17px;	
+	}
+	&__wrap {
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+	}
+	&__left-side {
+
+	}
+	&__filter {
+		padding: 0 17px 0 17px;		
+	}
+	&__projects {
+		padding: 0 17px 0 17px;	
+	}
+	&__slider-buttons-2 {
+		padding: 0 17px 0 17px;	
+		justify-content: center;
+	}
+	&__slider-button-2 {
+		width: 46px;
+		height: 10px;
+	}
+	&__right-side {
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 17px;
+		padding: 0 17px 17px 17px;		
+
+		align-items: start;
+	}
+	&__card {
+		padding: 0 17px 0 17px;			
+	}
+	&__join {
+		padding: 0 17px 0 17px;			
+	}
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.main{
+	width: 100%;
+	&__description-of-image-box {
+		padding: 14px 0 14px 17px;
+	  width: 217px*0.8;
+	  height: 72px*0.8;
+	}
+	&__descriptions-txt {
+		font-size: 15px;
+	}
+	&__descriptions-h2 {
+		font-size: 20pt;
+	}
+	&__about {
+		grid-auto-flow: row;
+		padding: 41px 0 38px 0;
+	}
+	&__latest-work-line {
+		grid-auto-flow: row;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		justify-content: center;
+		padding: 41px 17px 38px 17px;
+	}
+	&__heading-wrap {
+		width: 100%;
+		padding: 17px 17px 0 17px;	
+	}
+	&__heading {
+	  font-family: Bebas Neue;
+	  font-size: 20pt;
+	}
+	&__about-cards {
+		grid-auto-flow: row;
+		grid-template-columns: auto;
+		grid-gap: 0px;
+		padding: 0 17px 0 17px;		
+	}
+	&__employee-cards {
+		padding: 0 17px 0 17px;	
+	}
+	&__wrap {
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+	}
+	&__left-side {
+
+	}
+	&__filter {
+		padding: 0 17px 0 17px;		
+	}
+	&__projects {
+		padding: 0 17px 0 17px;	
+	}
+	&__slider-buttons-2 {
+		padding: 0 17px 0 17px;	
+		justify-content: center;
+	}
+	&__slider-button-2 {
+		width: 46px;
+		height: 10px;
+	}
+	&__right-side {
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+		grid-gap: 17px;
+		padding: 0 17px 17px 17px;		
+
+		align-items: start;
+	}
+	&__projects {
+		column-count: 2;
+		column-gap: 14px;
+	}
+	&__card {
+		padding: 0 17px 0 17px;			
+	}
+	&__join {
+		padding: 0 17px 0 17px;			
+	}
+}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+.main{
+	width: 100%;
+	&__description-of-image-box {
+		padding: 7px 0 7px 10px;
+	  width: 217px*0.6;
+	  height: 72px*0.6;
+	}
+	&__descriptions-txt {
+		font-size: 12px;
+	}
+	&__descriptions-h2 {
+		font-size: 17pt;
+	}
+	&__details-of-image-box{
+		height: auto;
+	}
+	&__latest-work-line {
+		grid-template-columns: repeat(auto-fit, 100%);
+	}	
+	&__employee-cards {
+		grid-auto-flow: row;
+		grid-template-columns: auto;
+		grid-gap: 0px;
+		padding: 0 17px 0 17px;	
+	}
+	&__projects {
+		column-count: 1;
+		column-gap: 0px;
+	}
+}
+}

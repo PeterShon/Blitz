@@ -1,0 +1,22 @@
+.next {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-gap: 10px;
+	grid-auto-flow: column;
+	&__icon {
+		height: 100%;
+	}
+	&__txt {
+		text-decoration: none;
+
+		font-family: Bebas Neue;
+	  font-size: 12pt;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: .7;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #474747;
+	}
+}

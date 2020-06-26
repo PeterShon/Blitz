@@ -1,0 +1,118 @@
+.about {
+	display: grid;
+
+	-webkit-transition-timing-function: linear;
+	-o-transition-timing-function: linear;
+	transition-timing-function: linear;
+	transition-duration: 0.2s;
+	&:hover {
+		background-color: #fafafa;
+	}
+	&:hover > &__header::after {
+		width: 100%;
+	}
+	&__header {
+		position: relative;
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-gap: 31px;
+		grid-auto-flow: column;
+		margin-bottom: 33px;
+		&::after {
+		content: '';
+		position: absolute;
+		justify-self: center;
+		bottom: -8px;
+		width: 0px;
+		height: 3px;
+
+		-webkit-transition-duration: 0.3s;
+		-o-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-timing-function: linear;
+		-o-transition-timing-function: linear;
+		transition-timing-function: linear;
+
+		border-radius: 5px;
+		background-color: #474747;
+		}
+	}
+	&__icon {
+		height: 100%;
+	}
+	&__h2 {
+		text-decoration: none;
+
+		font-family: Bebas Neue;
+	  font-size: 20pt;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.0;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #464646;
+	}
+	&__txt{
+		margin-bottom: 22px;
+
+		font-family: HelveticaNeue-Medium;
+	  font-size: 12px;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.5;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #414141;
+	}
+}
+
+/*MEDIA QUERIES*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.about {
+	padding: 0 17px;
+	&__header {
+		margin-bottom: 13px;
+	}
+	&__txt {
+		margin-bottom: 11px;
+	}
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.about {
+	padding: 0 17px;
+	&__header {
+		margin-bottom: 13px;
+	}
+	&__txt {
+		margin-bottom: 11px;
+	}
+}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+.about {
+	&__icon {
+		height: 20px;
+	}
+	&__h2 {
+		font-size: 15pt;
+	}
+}
+}
